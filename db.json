@@ -1,0 +1,45 @@
+[{
+    "name": "Terrazo Di Dante",
+    "localization": {
+        "city": "São José dos Campos",
+        "state": "SP"
+    },
+
+    "description": {
+        "title": "Terrazo Di Dante",
+        "paragraphs": {
+            "first": "Você que quer mais espaço e conforto para ver a família crescer, quer lazer de clube ao descer do elevador, quer viver em um bairro completo e tranquilo, você que viu sua vida mudar e agora quer ver ainda mais!",
+            "second": "Chegou o Terrazzo di Dante, esse mundo novo espera você de braços abertos."
+        },
+
+     "localization": {
+        "title": "Localização",
+        "paragraphs": {
+            "first": "Localizado na região Sul de São José dos Campos (Parque Industrial), o Terrazo di Dante tem a vantagem de estar próximo ao Shopping Vale Sul, Shopping Jd.Oriente,Supermercados: Shibata, Coop, Nagumo e Simpatia. Principais vias de acesso ao bairro: Anel viário, que liga a região Sul ao centro, Rodovia Presidente Dutra, Av. José Cobra, Av. João Batista de Souza Soares e Rua Bacabal.",
+            "second": "Está localizado próximo a linha verde e terminais de ônibus com diversas opções de linhas que atendem a toda a cidade. Está próximo também ao Hospital regional, Hospital de clinicas Sul, Corpo de Bombeiros, agencia dos correios, Escola Municipal Maria de Melo, Escola Municipal Joana Mattar de Oliveira e Praça Natal."
+        }
+    },
+
+     "benefits": {
+        "paragraph": "Morar no Parque Industrial (Av. José Cobra) em apartamentos de dois dormitórios com suíte, acabamento premium, varanda gourmet (Churrasqueira a carvão), num condomínio de torres com elevador, lazer completo (Decorado e equipado) e condições imperdíveis de lançamento.",
+        "list": [
+            {
+                "title": "Localização privilegiada",
+                "rigth": true
+            },
+
+            {
+                "title": "Varanda gourmet",
+                "rigth": false
+            },
+
+            {
+                "title": "Decorado e equipado",
+                "rigth": true
+            },
+
+            {
+                "title": "Lazer completo",
+                "rigth": false
+            }]
+}}}]
