@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Image from "next/Image";
+import Image from 'next/legacy/image'
 import imagesFromTerrazoDiDante from "../../public/images/index"
 
 const Base = ({className}) => (

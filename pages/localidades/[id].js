@@ -1,6 +1,6 @@
 import db from '../../db.json'
 import React from 'react'   
-import Image from 'next/Image'
+import Image from 'next/legacy/image'
 import Wrapper from '../../components/Wrapper'
 import LocalizationHeader from '../../components/LocalizationHeader'
 import Description from '../../components/Description'
