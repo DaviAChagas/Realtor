@@ -8,7 +8,9 @@ const Base = ({className}) => (
         <h1>Jairo Leite</h1>
         <h2>CORRETOR CREDENCIADO</h2>
 
-        <button>Vamos conversar?</button>
+        <a href="https://api.whatsapp.com/send?phone=5512991502105&text=Ol%C3%A1%2C%20Jairo!%20Tudo%20bem%3F%20Eu%20gostaria%20de%20conversar%20com%20voc%C3%AA%20sobre%20im%C3%B3veis.">
+            Vamos conversar?
+        </a>
         </div>
         
         <div>
@@ -42,7 +44,7 @@ const Header = styled(Base)`
             margin-top: 0;
         }
 
-        button {
+        a {
             background-color: #0f766e;
             transition: 350ms;
             border: none;
@@ -52,9 +54,11 @@ const Header = styled(Base)`
             border-radius: 2em;
             cursor: pointer;
             margin: 3vh 3vh 0 0;
+            text-decoration: none;
+            color: #FAFAFA;
         }
 
-        button:hover {
+        a:hover {
             background-color: #118f85;
         }
     }
