@@ -21,7 +21,7 @@ const LocalizationHeader = styled.header`
         height: 80vh;
 
         img {
-            width: 20vw !important;
+            width: 12vw !important;
         }
     }
 `

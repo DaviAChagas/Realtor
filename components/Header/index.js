@@ -63,17 +63,18 @@ const Header = styled(Base)`
         width: 50vw;
         height: 55vw;
         border-radius: 50%;
-        margin: -13.75vw -10vw 0 0 ;
+        margin: -14vw -7vw 0 0 ;
         background-color: #0f766e;
         display: flex;
         align-items: center;
         justify-content: center;
 
         img {
-            max-width: 60%;
-            width: auto;
-            height: auto;
-            margin: 6.8vw 5vw 0 0 ;
+            width: auto !important;
+            height: auto !important;
+            scale: 0.70;
+            margin: 5vw 5vw 0 0 !important;
+            padding: 0 2vw 0 0 !important;
         }
     }
 
@@ -118,14 +119,15 @@ const Header = styled(Base)`
         div:nth-child(2) {
         width: 50vh;
         height: 55vh;
-        margin: -12.5vh -12.5vh 0 0 ;
+        margin: -12vh -10vh 0 0 ;
         display: flex;
+        align-items: center;
 
         img {
-            max-width: 65%;
             width: auto;
             height: auto;
-            margin: 6.25vh 6.25vh 0 0;
+            scale: 0.75 !important;
+            padding: 2vh 5vh 0 0 !important;
         }
     }
     }
