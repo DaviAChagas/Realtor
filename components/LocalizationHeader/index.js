@@ -2,7 +2,7 @@ import styled from "styled-components";
 import imagesFromTerrazoDiDante from "../../public/images";
 
 const LocalizationHeader = styled.header`
-    background-image: ${`url('${imagesFromTerrazoDiDante.img14.src}')`};
+    background-image: ${props => {`url('${props.background}')`}};
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.4);
     background-repeat: no-repeat;
     background-size: cover;

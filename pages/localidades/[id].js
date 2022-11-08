@@ -9,7 +9,6 @@ import Benefit from '../../components/Benefit'
 import WhatsappButton from '../../components/WhatsappButton'
 import Carousel from '../../components/Carousel'
 import icons from '../../public/icons'
-import imagesFromTerrazoDiDante from '../../public/images'
 
 export async function getStaticPaths() { 
     const locations = db
@@ -37,10 +36,11 @@ export async function getStaticProps(context) {
 
 
 function Localidades ({data}) {
+  console.log(data)
     return (
         <Wrapper rowGap="2">
 
-        <LocalizationHeader>
+        <LocalizationHeader background={data.background}>
          <Image src={icons.terrazoDiDante} alt="Terrazo Di Dante Logo"/>
         </LocalizationHeader>
    
@@ -70,12 +70,13 @@ function Localidades ({data}) {
    
 {
 data.description.benefits.list.map((benefit) => {
+  console.log(benefit.image)
     return (
       <Benefit 
           key={benefit.title}
           title={benefit.title}
           isRight={benefit.rigth}
-          image={imagesFromTerrazoDiDante.img11}
+          image={benefit.image}
           alt={benefit.title} />)
 })
 }

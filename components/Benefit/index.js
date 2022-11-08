@@ -6,7 +6,7 @@ function Base({className, title, image, alt, isRight}){
     return (
         <section className={className}>
             <h2>{title}</h2>
-            <Image src={image} alt={alt}/>
+            <Image src={image} alt={alt} width={1200} height={900}/>
         </section>
     )
 }

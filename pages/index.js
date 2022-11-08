@@ -15,7 +15,6 @@ return (
   <Card 
   key={local.name}
   name={local.name}
-  background={imagesFromTerrazoDiDante.img2.src}
   city={local.localization.city}
   state={local.localization.state}/>
   )
