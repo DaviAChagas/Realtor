@@ -70,7 +70,6 @@ function Localidades ({data}) {
    
 {
 data.description.benefits.list.map((benefit) => {
-  console.log(benefit.image)
     return (
       <Benefit 
           key={benefit.title}
