@@ -1,28 +1,51 @@
 import styled from "styled-components";
-import imagesFromTerrazoDiDante from "../../public/images";
+import Link from 'next/link'
 
-const LocalizationHeader = styled.header`
-    background-image: ${props => {`url('${props.background}')`}};
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.4);
-    background-repeat: no-repeat;
-    background-size: cover;
+const Base = ({name, className}) => (
+    <header className={className}>
+        <ul>
+            <li>
+                <Link href = {"/../../"}>Página inicial</Link>
+            </li>
+
+            <li>
+                <Link href = {"/localidades/" + name}>{name}</Link>
+            </li>
+        </ul>
+    </header>
+)
+
+const LocalizationHeader = styled(Base)`
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 30vh;
-    width: 100vw;
-    background-color: #21202e;
+    justify-content: flex-start;
+    height: 10vh;
+    width: 100vw !important;
+    padding: 0 10vw;
 
-    img {
-        width: 25vw !important;
+    ul {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style-type: none;
+        column-gap: 2vw;
+    }
+
+    li {
+        transition: 250ms;
+    }
+
+     li:hover {
+        color: #45a889;
+     }
+
+     li:nth-child(2) {
+        text-decoration: underline;
     }
 
     @media only screen and (min-width: 768px) {
-        height: 80vh;
-
-        img {
-            width: 12vw !important;
-        }
+        height: 10vh;
     }
 `
 

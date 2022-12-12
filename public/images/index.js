@@ -1,5 +1,5 @@
-const imagesFromTerrazoDiDante = {
+const astronaut = {
     astronauta: require('./astronauta.png').default,
 }
 
-export default imagesFromTerrazoDiDante
+export default astronaut

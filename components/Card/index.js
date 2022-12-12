@@ -15,16 +15,18 @@ const BaseCard = ({className, name, background, city, state}) => (
 const Card = styled(BaseCard)`
   color: #FAFAFA;
   font-weight: bold;
-  width: max(720px, 65vw);
-  height: 20vh;
-  padding: 2vh 4vw;
+  width: 22vw;
+  height: 25vw;
+  padding: 2vh 2vw;
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.4);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   background-position: center;
-  justify-content: center;
-  border-radius: 1.5em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: flex-end;
+  border-radius: 60px;
   transition: 350ms;
 
   :hover {
@@ -46,10 +48,10 @@ const Card = styled(BaseCard)`
         font-size: clamp(1.3em, 3vw, 1.6em);
     }
 
-    @media only screen and (max-width: 768px) {
-        width: 92vw;
-        height: clamp(100px, 25vh, 26vh);
-        background-position: left;
+
+    @media (orientation: portrait){
+        width: clamp(19em, 45vw, 45vw);
+        height: clamp(19em, 50vh, 50vh);
     }
 
 `

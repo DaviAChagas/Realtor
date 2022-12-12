@@ -34,15 +34,11 @@ export async function getStaticProps(context) {
     }
 }
 
-
 function Localidades ({data}) {
-  console.log(data)
     return (
-        <Wrapper rowGap="2">
+        <Wrapper rowGap="1" bgColor="#FAFAFA">
 
-        <LocalizationHeader background={data.background}>
-         <Image src={icons.terrazoDiDante} alt="Terrazo Di Dante Logo"/>
-        </LocalizationHeader>
+        <LocalizationHeader name={data.name} /> 
    
      <WhatsappButton>
       <a href='https://wa.me/5512991502105?text=Ol%C3%A1%2C+Jairo%21+Tudo+bem%3F+Vim+conversar+sobre+o+Terrazo+Di+Dante.'>
@@ -51,12 +47,16 @@ function Localidades ({data}) {
      </WhatsappButton>
    
    
-        <Description>
-       <h1>{data.description.title}</h1>
+        <Description display="flex">
+        <div> 
+          <h1>{data.description.title}</h1>
    
-       <p>{data.description.paragraphs.first}</p>
-       <p>{data.description.paragraphs.second}</p>
-        </Description>
+          <p>{data.description.paragraphs.first}</p>
+          <p>{data.description.paragraphs.second}</p>
+        </div>
+
+          <Image src={data.description.image} width="1200" height="900" alt={data.name + " image"}/>
+       </Description>
    
    
      <Localization>
@@ -74,18 +74,16 @@ data.description.benefits.list.map((benefit) => {
       <Benefit 
           key={benefit.title}
           title={benefit.title}
-          isRight={benefit.rigth}
           image={benefit.image}
           alt={benefit.title} />)
 })
-}
-      
-       <Description>
+}   
+     </section>
+
+        <Description>
         <p>{data.description.benefits.paragraph}</p>
        </Description>
-   
-     </section>
-   
+
      <Carousel>
    
      </Carousel>

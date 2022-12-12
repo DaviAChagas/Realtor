@@ -1,6 +1,6 @@
 [{
     "name": "Terrazo Di Dante",
-    "background": "/../public/images/TerrazoDiDante/(6).jpeg",
+    "background": "/images/TerrazoDiDante/(2).jpeg",
     "localization": {
         "city": "São José dos Campos",
         "state": "SP"
@@ -8,6 +8,7 @@
 
     "description": {
         "title": "Terrazo Di Dante",
+        "image": "/images/TerrazoDiDante/(21).jpeg",
         "paragraphs": {
             "first": "Você que quer mais espaço e conforto para ver a família crescer, quer lazer de clube ao descer do elevador, quer viver em um bairro completo e tranquilo, você que viu sua vida mudar e agora quer ver ainda mais!",
             "second": "Chegou o Terrazzo di Dante, esse mundo novo espera você de braços abertos."
@@ -26,25 +27,22 @@
         "list": [
             {
                 "title": "Localização privilegiada",
-                "image": "/images/TerrazoDiDante/(2).jpeg",
-                "rigth": true
+                "image": "/images/TerrazoDiDante/(2).jpeg"
             },
 
             {
                 "title": "Varanda gourmet",
-                "image": "/images/TerrazoDiDante/(9).jpeg",
-                "rigth": false
+                "image": "/images/TerrazoDiDante/(9).jpeg"
             },
 
             {
                 "title": "Decorado e equipado",
-                "image": "/images/TerrazoDiDante/(6).jpeg",
-                "rigth": true
+                "image": "/images/TerrazoDiDante/(6).jpeg"
             },
 
             {
                 "title": "Lazer completo",
-                "image": "/images/TerrazoDiDante/(21).jpeg",
-                "rigth": false
+                "image": "/images/TerrazoDiDante/(21).jpeg"
             }]
-}}}]
+}}}
+]

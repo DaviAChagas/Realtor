@@ -1,6 +1,5 @@
 const icons = {
-    whatsapp: require('./whatsapp.svg'),
-    terrazoDiDante: require('./terrazo_di_dante.svg')
+    whatsapp: require('./whatsapp.svg')
 }
 
 export default icons
