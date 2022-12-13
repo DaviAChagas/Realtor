@@ -22,8 +22,9 @@ p {
 
 .Benefits{
     width: 100vw;
+    background-color: #265c4b;
     display: grid;
-}
+}  
 
 
 .Cards {
@@ -35,6 +36,7 @@ p {
 @media (min-width: 822px) and (orientation: landscape) {
     .Benefits {
     grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 2.5vw;
     border-top: 35px #265c4b solid;
     }
 
