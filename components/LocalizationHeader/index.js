@@ -29,7 +29,7 @@ const LocalizationHeader = styled(Base)`
         justify-content: flex-start;
         align-items: center;
         list-style-type: none;
-        column-gap: 2vw;
+        column-gap: 5vw;
     }
 
     li {
