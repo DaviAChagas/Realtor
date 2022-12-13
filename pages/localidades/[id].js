@@ -84,9 +84,11 @@ data.description.benefits.list.map((benefit) => {
         <p>{data.description.benefits.paragraph}</p>
        </Description>
 
-     <Carousel>
+     <Carousel
+      className="Carousel"
+      path={data.path}
+      numberOfImages={data.numberOfImages} />
    
-     </Carousel>
    
         </Wrapper>
     )
