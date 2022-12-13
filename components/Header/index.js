@@ -31,8 +31,8 @@ const Header = styled(Base)`
             background-color: #265c4b;
             transition: 350ms;
             border: none;
-            width: fit-content;
-            padding: clamp(25px, 2vw, 35px);
+            width: max-content;
+            padding: clamp(25px, 1vw, 35px);
             font-size: 1.3em;
             border-radius: 2em;
             cursor: pointer;
@@ -97,7 +97,6 @@ const Header = styled(Base)`
             scale: 0.9;
         }
     }
-
 
 
     @media only screen and (max-width: 768px) and (orientation: portrait) {
