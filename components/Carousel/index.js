@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { useState } from "react";
 import icons from "../../public/icons";
-import Image from "next/Image"
+import Image from 'next/legacy/image'
 
 function Base({className, path, numberOfImages}) {
     const [index, setIndex] = useState(1)
