@@ -1,6 +1,9 @@
 [{
     "name": "Terrazo Di Dante",
+    "path": "/images/TerrazoDiDante/",
+    "numberOfImages": 28,
     "background": "/images/TerrazoDiDante/(2).jpeg",
+    
     "localization": {
         "city": "São José dos Campos",
         "state": "SP"
