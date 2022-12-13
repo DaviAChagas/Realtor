@@ -20,7 +20,7 @@ function Base({className, path, numberOfImages}) {
 return (
     <div className={className}>
 
-        <Image src={`${path}(${index}).jpeg`} Alt="s"  width="1600" height="1200" />
+        <Image src={`${path}(${index}).jpeg`} alt="Carousel image"  width="1600" height="1200" />
 
         <button id="Prev" onClick={subtractIndex}>
             <Image src={icons.arrow}
