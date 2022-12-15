@@ -1,6 +1,6 @@
 [{
     "name": "Terrazo Di Dante",
-    "url": "https://www.jairocorretor.cim.br/localidades/Terrazo%20Di%20Dante",
+    "urlPath": "localidades/Terrazo%20Di%20Dante",
     "imagePath": "/images/TerrazoDiDante/",
     "numberOfImages": 28,
     "background": "/images/TerrazoDiDante/(2).jpeg",
