@@ -3,8 +3,8 @@ import { useState } from "react";
 import icons from "../../public/icons";
 import Image from 'next/image'
 
-function Base({className, path, numberOfImages}) {
-    const [index, setIndex] = useState(1)
+function Base({className, imagePath, numberOfImages}) {
+    const [index, setIndex] = useState(1)   
 
     const addIndex= () => {
     index < numberOfImages ?
@@ -20,7 +20,7 @@ function Base({className, path, numberOfImages}) {
 return (
     <div className={className}>
 
-        <Image src={`${path}(${index}).jpeg`} alt="Carousel image"  width="1600" height="1200" />
+        <Image src={`${imagePath}(${index}).jpeg`} alt="Carousel image"  width="1600" height="1200" />
 
         <button id="Prev" onClick={subtractIndex}>
             <Image src={icons.arrow}
