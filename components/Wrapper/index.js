@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { NextSeo } from 'next-seo';
 
-function Base({title, description, children, className, urlPath = "", ogImage}){
+function Base({title, description, children, className, urlPath = "", ogImage = "astronauta.png"}){
     const url = `https://www.jairocorretor.cim.br/${urlPath}`
 
     return (
@@ -17,6 +17,14 @@ function Base({title, description, children, className, urlPath = "", ogImage}){
         url,
         title,
         description,
+        images: [
+          {  
+            url: `https://www.jairocorretor.cim.br/images/${ogImage}`,
+            width: 1280,
+            height: 720,
+            alt: "Um novo mundo a ser conquistado!"
+          }
+        ],
         siteName: 'Jairo Corretor',
       }}
     />

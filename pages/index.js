@@ -13,7 +13,6 @@ function App() {
         rowGap="2" bgColor="#f7ffd7"
         title="Jairo Leite - Corretor Credenciado"
         description="O meu compromisso é facilitar, com segurança, a sua conquista de um novo mundo!">
-
   <Header />
 
   <section className="Cards">
