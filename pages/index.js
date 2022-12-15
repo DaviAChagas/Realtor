@@ -9,7 +9,12 @@ import { Analytics } from '@vercel/analytics/react';
 function App() {
  return ( 
 
-<Wrapper rowGap="2" bgColor="#f7ffd7">
+<Wrapper 
+        rowGap="2" bgColor="#f7ffd7"
+        title="Jairo Leite - Corretor Credenciado"
+        description="O meu compromisso é facilitar, com segurança, a sua conquista de um novo mundo!"
+        url="https://www.jairocorretor.cim.br/"
+        ogImage="/images/astronauta.png">
 
   <Header />
 
@@ -22,7 +27,7 @@ function App() {
         background={local.background}
         city={local.localization.city}
         state={local.localization.state}/>
-              )
+      )
 })}
    </section>
 

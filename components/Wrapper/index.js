@@ -1,6 +1,39 @@
 import styled from "styled-components";
+import { NextSeo } from 'next-seo';
 
-const Wrapper = styled.main`
+function Base({title, description, children, className, url, ogImage}){
+    return (
+        <div className={className}>
+
+    <NextSeo
+      title={title}
+      description={description}
+      canonical="https://www.jairocorretor.cim.br/"
+      openGraph={{
+        url: {url},
+        title: {title},
+        locale: 'pt_BR',
+        description: {description},
+        images: [
+          {
+            url: {ogImage},
+            width: 800,
+            height: 600,
+            alt: {description},
+            type: 'image/jpeg',
+          },
+        ],
+        siteName: 'Jairo Corretor',
+      }}
+    />
+
+            {children}
+        </div>
+    )
+}
+
+
+const Wrapper = styled(Base)`
 width: 100%;
 height: fit-content;
 padding: 0 0 5vh 0;

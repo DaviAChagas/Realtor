@@ -8,7 +8,6 @@ import Localization from '../../components/Localization'
 import Benefit from '../../components/Benefit'
 import WhatsappButton from '../../components/WhatsappButton'
 import Carousel from '../../components/Carousel'
-import icons from '../../public/icons'
 
 export async function getStaticPaths() { 
     const locations = db
@@ -36,23 +35,29 @@ export async function getStaticProps(context) {
 
 function Localidades ({data}) {
     return (
-        <Wrapper rowGap="1" bgColor="#FAFAFA">
+      <Wrapper 
+        rowGap="1" bgColor="#FAFAFA"
+        title={`${data.name} - Jairo Corretor`}
+        description={data.description.paragraphs[0]}
+        ogImage={data.background}
+        url={data.url}>
 
-        <LocalizationHeader name={data.name} /> 
-   
-     <WhatsappButton>
-      <a href='https://wa.me/5512991502105?text=Ol%C3%A1%2C+Jairo%21+Tudo+bem%3F+Vim+conversar+sobre+o+Terrazo+Di+Dante.'>
-      <Image src={icons.whatsapp} alt="WPP Logo"/>
-      </a>
-     </WhatsappButton>
-   
+    <LocalizationHeader name={data.name} /> 
+    <WhatsappButton subjectMatter={data.name}/>
    
         <Description display="flex">
         <div> 
-          <h1>{data.description.title}</h1>
+          <h1>{data.name}</h1>
    
-          <p>{data.description.paragraphs.first}</p>
-          <p>{data.description.paragraphs.second}</p>
+
+      {data.description.paragraphs.map(paragraphContent => {
+        return (
+          <>
+            <p>{paragraphContent}</p>
+          </>
+        )
+      })}
+
         </div>
 
           <Image src={data.description.image} width="1200" height="900" alt={data.name + " image"}/>
@@ -60,9 +65,16 @@ function Localidades ({data}) {
    
    
      <Localization>
-       <h2>{data.description.localization.title}</h2>
-       <p>{data.description.localization.paragraphs.first}</p>
-       <p>{data.description.localization.paragraphs.second}</p>
+       <h2>Localização</h2>
+
+       {data.description.localization.paragraphs.map(paragraphContent => {
+        return (
+          <>
+            <p>{paragraphContent}</p>
+          </>
+        )
+      })}
+
      </Localization>
    
    
@@ -81,12 +93,19 @@ data.description.benefits.list.map((benefit) => {
      </section>
 
         <Description>
-        <p>{data.description.benefits.paragraph}</p>
-       </Description>
+
+          {data.description.benefits.paragraphs.map(paragraphContent => {
+        return (
+          <>
+            <p>{paragraphContent}</p>
+          </>
+        )
+      })}
+        </Description>
 
      <Carousel
       className="Carousel"
-      path={data.path}
+      imagePath={data.imagePath}
       numberOfImages={data.numberOfImages} />
    
    
