@@ -1,6 +1,19 @@
 import styled from 'styled-components'
+import Image from 'next/image'
+import icons from '../../public/icons'
 
-const WhatsappButton = styled.button`
+function Base({className, subjectMatter}) {
+    const locality = subjectMatter.replace(/\s/g, '+')
+    
+         return (
+            <button className={className}>
+                <a href={`https://wa.me/5512991502105?text=Ol%C3%A1%2C+Jairo%21+Tudo+bem%3F+Vim+conversar+sobre+o+${locality}.`}>
+                    <Image src={icons.whatsapp} alt="WPP Logo"/>
+                </a>
+            </button>
+)}
+
+const WhatsappButton = styled(Base)`
     display: flex;
     justify-content: center;
     align-items: center;
