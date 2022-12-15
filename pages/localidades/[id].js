@@ -40,7 +40,7 @@ function Localidades ({data}) {
         title={`${data.name} - Jairo Corretor`}
         description={data.description.paragraphs[0]}
         ogImage={data.background}
-        url={data.url}>
+        urlPath={data.urlPath}>
 
     <LocalizationHeader name={data.name} /> 
     <WhatsappButton subjectMatter={data.name}/>

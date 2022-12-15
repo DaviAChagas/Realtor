@@ -1,28 +1,22 @@
 import styled from "styled-components";
 import { NextSeo } from 'next-seo';
 
-function Base({title, description, children, className, url, ogImage}){
+function Base({title, description, children, className, urlPath = "", ogImage}){
+    const url = `https://www.jairocorretor.cim.br/${urlPath}`
+
     return (
         <div className={className}>
 
-    <NextSeo
+<NextSeo
       title={title}
       description={description}
       canonical="https://www.jairocorretor.cim.br/"
       openGraph={{
-        url: {url},
-        title: {title},
-        locale: 'pt_BR',
-        description: {description},
-        images: [
-          {
-            url: {ogImage},
-            width: 800,
-            height: 600,
-            alt: {description},
-            type: 'image/jpeg',
-          },
-        ],
+        locale:'pt_BR',
+        type: 'Website',
+        url,
+        title,
+        description,
         siteName: 'Jairo Corretor',
       }}
     />
