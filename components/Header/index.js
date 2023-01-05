@@ -11,7 +11,10 @@ const Base = ({className}) => (
         </div>
         
         <div>
-            <Image src={astronaut.astronauta} alt="Imagem de um astronauta"/>
+            <Image src={astronaut.astronauta} 
+            alt="Imagem de um astronauta"
+            priority
+            />
         </div>
 
         <a href="https://api.whatsapp.com/send?phone=5512991502105&text=Ol%C3%A1%2C%20Jairo!%20Tudo%20bem%3F%20Eu%20gostaria%20de%20conversar%20com%20voc%C3%AA%20sobre%20im%C3%B3veis.">
